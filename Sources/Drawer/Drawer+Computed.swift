@@ -56,6 +56,8 @@ extension Drawer {
                 .frame(maxHeight: .infinity)
                 .animation(self.animation)
                 .gesture(self.dragGesture)
+//                .simultaneousGesture(self.dragGesture)
+//                .highPriorityGesture(self.dragGesture, including: .all)
                 .edgesIgnoringSafeArea(.all)
             }
         }
