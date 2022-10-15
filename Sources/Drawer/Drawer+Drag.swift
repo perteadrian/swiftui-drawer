@@ -21,7 +21,7 @@ internal extension Drawer {
     
     func dragChanged(_ value: DragGesture.Value) {
         dragging = true
-        
+        print(value.location.y)
         height = Drawer.dampen(
             value.startLocation.y
             + restingHeight - value.location.y,
